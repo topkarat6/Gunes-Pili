@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrapt css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--Jquery-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!--ScrollSpy js-->
+    <script src="assets/js/jquery.scroll-spy.min.js"></script>
+    <!--Custom css-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--Font Awesome-->
+    <script src="assets/js/font-awesome.js"></script>
+    <!--Swiper css-->
+    <!--Owl Carousel css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <!--Türkiye haritası css-->
+    <link rel="stylesheet" href="assets/css/turkiye.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--Bootstarpt js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <title>Güneş Pili</title>
+</head>
+
+<body>
+    <div class="navigation-container">
+        <div class="navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-8">
+                        <a href="index.html">
+                            <img src="assets/images/gunespili-sihay.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-9 col-4">
+                        <div class="Menu-button">
+                            <i onclick="openMenu()" id="fa-bars" class="fas fa-bars" style="visibility: visible;"></i>
+                            <i id="fa-times" onclick="openMenu()" class="fas fa-times" style="visibility: hidden;"></i>
+                        </div>
+                        <ul id="navigation-wrapper" class="navigation-wrapper">
+                            <li>
+                                <a class="active" href="kurumsal.html">
+                                   Kurumsal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Hizmetlerimiz.html">
+                                    Hizmetler
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="navigation-sub-wrapper">
+                                    <li>
+                                        <a href="#">Güneş Enerji Santralleri GES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Off-Grid (Depolamalı) Sistem</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Solar Sulama Sistemleri</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Çatı GES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Solar Aydınlatma Sistemleri</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Montaj Ve Destek Hizmetleri</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Solar Paket Sistemleri</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="referanslar.html">
+                                    Referanslar
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="navigation-sub-wrapper">
+                                    <li>
+                                        <a href="#">On Grid referans</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Off-Grid referance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Aydınlatma referance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tarımsal sulama referance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://shop.gunes-pili.com/">
+                                    Online Mağaza
+                                </a>
+                            </li>
+                            <li>
+                                <a href="iletişim.html">
+                                    İletişim
+                                </a>
+                            </li>
+                            <li>
+                                <div class="language-wrapper">
+                                    <select name="language">
+                                        <option value="Türkçe">Tr</option>
+                                        <option value="English">En</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-banner">
+            <div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">AnaSayfa</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Kurumsal</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div>
+                Kurumsal
+            </div>
+        </div>
+    </div>
+    <div class="kurumsal-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="kurumsal-wrapper">
+                        <div class="start-image">
+                            <img src="assets/images/hakkimizda-solar.png" alt="">
+                        </div>
+                        <div id="hakkimizda">
+                            <div class="title bold">
+                                Güneş Pili Ltd. Şti. Yenilenebilir Enerji Sistemleri
+                            </div>
+                            <br>
+                            <div>
+                                Yenilenmiş kurumsal sitemizi ziyaretiniz için teşekkür ederiz. Uzun süredir kurumsal sitelerimize erişimde sorun yaşandığı dolayısıyla sizlerden özür dileriz. Teknik sorunlardan ve şirket tarafından alınan yenilenme projesi dolayısıyla eski yapılandırma
+                                üstünde fazla zaman kaybetmeden, tüm sistem alt yapısının değiştirilmesi kararı alınması sonucu, sizlerden ayrı kaldık. Eminiz yeni kurumsal sayfamız ve özellikleri sizleri memnun edecektir.
+                            </div>
+                            <br>
+                            <div>
+                                Eski ve yeni kurumsal sayfa arasındaki temel farklar kısacası şunlardır: kolay erişimlik, öz bilgilendirme ve merkezleştirme. Eski kurumsal sayfamız beş yıldır işlem görmesi, teknik alt yapısının eskimesi ve bakımı oldukça zor olması nedeniyle sizlere
+                                şirketimiz ve çalıştığımız projeler hakkında daha hızlı bilgi sunmak amacıyla bu adımı atmaya karar vermiş oluyoruz.
+                            </div>
+                            <br>
+                            <div class="title">
+                                Kolay Erişimlik
+                            </div>
+                            <div>
+                                Yeni sayfamızı her türlü aygıt ile hiç bir engel ile karşılaşmadan ziyaret edebilirsiniz. Yeni nesil akıllı cep telefon, tablet vs. sorunsuz işlemektedir ve dokunmatik özelliklere sahibtir. Ayrıca toplu veri aktarma özellikleri sayesinde, yavaş internet
+                                bağlantısı olması fark etmeksizin, istedğiniz bölümlere hızlı şekilde girebilirsiniz.
+                            </div>
+                            <br>
+                            <div class="title">
+                                Öz Bilgilendirme
+                            </div>
+                            <div>
+                                Kurumsal alanda sizlere fazla teknik detaylara girmeden, çalıştığımız ürünler hakkında kısalar halinde ne tür imkanlar olduğunu göstermek istiyoruz ve sizlere sizler için faydalarını açıklayacağız. Kısacası net tanıtım ve net imkanlar. Tekniker olmanıza
+                                gerek kalmadan ihtiyacınıza uygun pratik çözümler.
+                            </div>
+                            <br>
+                            <div class="title">
+                                Merkezleştirme
+                            </div>
+                            <div>
+                                Eski sistemimizde sizlere sunmuş olduğumuz bilgiler farklı yerlerde sunulduğundan dolayı, erişim sorunu yaşanızordu. Bu bilgilerin bir kısmı ana sayfada, bir kısmı forum ve sanal mağaza alanında olması, sizlerin bu bilgilerden haberiniz olmadığını fark
+                                ettik. Bu nedenlerden dolayı forum alanını tümüzle kaldırıp, bilgileri ve teknik dosyaları adım adım sanal mağazamızın ürün bölümlerine taşımaya başladık. Böylece ürünler ve/yeya ürün kategorileri hakkında önemli teknik
+                                bilgileri doğrudan ürünleri incelediğinizde okuyabilirsiniz, teknik dosyaları indirirebilir ve sorularınızı iletebilirsiniz.
+                            </div>
+                            <br>
+
+                        </div>
+                        <div id="vizyonumuz">
+                            <div class="start-image">
+                                <img src="assets/images/vizyon.jpg" alt="">
+                            </div>
+                            <div class="title">
+                                #Vizyonumuz
+                            </div>
+                            <div>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, blanditiis vero sapiente voluptatum magni fuga ea pariatur dolor. Reiciendis doloribus veritatis error aperiam cum quidem unde voluptatem odio esse placeat, ullam dignissimos fugiat
+                                deleniti rerum delectus distinctio vitae, dolorem ipsam quis exercitationem earum natus est? Dolore suscipit ullam magnam in, velit accusantium error reiciendis natus ad quod placeat, quaerat quo? Totam ut doloremque autem
+                                reiciendis sunt animi, odit temporibus iure fugiat blanditiis minus veniam deserunt nihil numquam modi facilis soluta quae quaerat consectetur velit nulla. Porro omnis dolorem earum voluptatum necessitatibus ipsam corporis
+                                quia, iure tempora asperiores sint repellat nobis.
+                            </div>
+                        </div>
+                        <div id="misyonumuz">
+                            <div class="start-image">
+                                <img src="assets/images/misyon.jpg" alt="">
+                            </div>
+                            <div class="title">
+                                #Misyonumuz
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptas doloribus, placeat ab nesciunt dolores libero voluptatem totam omnis quibusdam, hic quod, laboriosam esse doloremque alias porro necessitatibus animi sapiente minima beatae voluptate
+                                facere fugiat architecto. Dolorem amet ut quaerat ab unde magni id dolores nulla architecto quos explicabo, laboriosam eos porro rem iure dicta odio ad vitae modi molestias soluta atque ullam sed temporibus? Aut voluptatibus
+                                quae saepe amet veritatis possimus ratione nobis cum velit. Nesciunt repellendus est dolorum saepe, totam sed, dicta nulla mollitia, tenetur fugit necessitatibus quis dolore laboriosam quae voluptatem accusantium unde?
+                                Vel iste saepe veniam?
+                            </div>
+                        </div>
+                        <div id="calisma-ilkeleri">
+                            <div class="title">
+                                #Politikalarımız
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Birinci İlke
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance,
+                                            as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>,
+                                            though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            İkinci İlke
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Üçüncü İlke</button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">Dördüncü ilke</button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">Beşinci ilke</button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within
+                                            the <code>.accordion-body</code>, though the transition does limit overflow.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="farkimiz">
+                            <div class="title">
+                                #Farkımız
+                            </div>
+                            <div>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, blanditiis vero sapiente voluptatum magni fuga ea pariatur dolor. Reiciendis doloribus veritatis error aperiam cum quidem unde voluptatem odio esse placeat, ullam dignissimos fugiat
+                                deleniti rerum delectus distinctio vitae, dolorem ipsam quis exercitationem earum natus est? Dolore suscipit ullam magnam in, velit accusantium error reiciendis natus ad quod placeat, quaerat quo? Totam ut doloremque autem
+                                reiciendis sunt animi, odit temporibus iure fugiat blanditiis minus veniam deserunt nihil numquam modi facilis soluta quae quaerat consectetur velit nulla. Porro omnis dolorem earum voluptatum necessitatibus ipsam corporis
+                                quia, iure tempora asperiores sint repellat nobis.
+                            </div>
+                        </div>
+                        <div id="tarihcemiz">
+                            <div class="start-image">
+                                <img src="assets/images/gunespili-sihay.png" alt="">
+                            </div>
+                            <div class="title">
+                                #Tarihçemiz
+                            </div>
+                            <div>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium, blanditiis vero sapiente voluptatum magni fuga ea pariatur dolor. Reiciendis doloribus veritatis error aperiam cum quidem unde voluptatem odio esse placeat, ullam dignissimos fugiat
+                                deleniti rerum delectus distinctio vitae, dolorem ipsam quis exercitationem earum natus est? Dolore suscipit ullam magnam in, velit accusantium error reiciendis natus ad quod placeat, quaerat quo? Totam ut doloremque autem
+                                reiciendis sunt animi, odit temporibus iure fugiat blanditiis minus veniam deserunt nihil numquam modi facilis soluta quae quaerat consectetur velit nulla. Porro omnis dolorem earum voluptatum necessitatibus ipsam corporis
+                                quia, iure tempora asperiores sint repellat nobis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="total-referance">
+                        <div class="linear-gradiand total-referance-title">
+                            Kurumsal
+                        </div>
+                        <div class="total-referance-body">
+                            <ul>
+                                <li>
+                                    <a href="#hakkimizda">
+                                        Hakkımızda
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#vizyonumuz">
+                                        Vizyonumuz
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#misyonumuz">
+                                        Misyonumuz
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#calisma-ilkeleri">
+                                        Politikalarımız
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#farkimiz">
+                                        Tarihçemiz
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#farkimiz">
+                                        Hedeflerimiz
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container-fluid">
+            <div class="e-bulten">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="e-bulten-title">
+                            E-Bültene Kayıt olun, bizden haberiniz olsun.
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="e-bulten-email">
+                            <input type="email" placeholder="E-Mail Adresinizi Girin">
+                            <a href="#" class="search-button">GÖNDER</a>
+                        </div>
+                        <div class="onay-formu">
+                            <input id="form-onay" type="checkbox">
+                            <label>
+                                <span onclick="openAgreement()"> Aydınlatma Metni </span> ve <span onclick="openAgreement2()">Açık rıza metni</span>'ni okudum ve kabul ediyorum.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="bottom-nav">
+                            <ul>
+                                <li><a href="#">Kurumsal</a></li>
+                                <li><a href="#">Hizmetler</a></li>
+                                <li><a href="#">Referanslar</a></li>
+                                <li><a href="#">Online Mağaza </a></li>
+                                <li><a href="#">İletişim</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <div class="container-fluid">
+                            <div class="bottom-nav-right">
+                                <div class="row">
+                                    <div class="col-md-4 col-12">
+                                        <div class="bottom-nav-right-title">
+                                            Kurumsal
+                                        </div>
+                                        <div class="bottom-nav-right-content ">
+                                            <ul>
+                                                <li><a href="#">Hakkımızda</a></li>
+                                                <li><a href="#">Vizyon</a></li>
+                                                <li><a href="#">Misyon</a></li>
+                                                <li><a href="#">Tarihçe</a></li>
+                                                <li><a href="#">Hedeflerimiz</a></li>
+                                                <li><a href="#">Politikalarımız</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <div class="bottom-nav-right-title">
+                                            Hizmetlerimiz
+                                        </div>
+                                        <div class="bottom-nav-right-content">
+                                            <ul>
+                                                <li><a href="#">SCADA OG</a></li>
+                                                <li><a href="#">SCADA AG</a></li>
+                                                <li><a href="#">GES Panel</a></li>
+                                                <li><a href="#">Çatı Üzeri GES</a></li>
+                                                <li><a href="#">Tarla GES</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
+                                        <div class="bottom-nav-right-title">
+                                            Blog
+                                        </div>
+                                        <div class="bottom-nav-right-content">
+                                            <ul>
+                                                <li><a href="#">Güneş paneli nedir?</a></li>
+                                                <li><a href="#">Neden güneş pili?</a></li>
+                                                <li><a href="#">İlk Güneş Panelleri?</a></li>
+                                                <li><a href="#">Enerji panelleri?</a></li>
+                                                <li><a href="#">Panel Sistemleri?</a></li>
+                                                <li><a href="#">Scada OG Nedir?</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="copyright-text">
+                            Güneş Pili © Copyright-Tüm Hakları Saklıdır
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="logo">
+                            <img src="assets/images/copyright-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Owl Carousel-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Türkiye haritası js-->
+    <script src="assets/js/turkiye.js"></script>
+    <script>
+        svgturkiyeharitasi();
+    </script>
+    <!--Swiper js-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--Custom js-->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

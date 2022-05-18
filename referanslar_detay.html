@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Jquery-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!--Custom css-->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!--Bootstrapt css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--Font Awesome-->
+    <script src="assets/js/font-awesome.js"></script>
+    <!--Swiper css-->
+    <!--Owl Carousel css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+    <!--Türkiye haritası css-->
+    <link rel="stylesheet" href="assets/css/turkiye.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <title>Güneş Pili</title>
+</head>
+
+<body>
+    <div class="navigation-container">
+        <div class="navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-8">
+                        <img src="assets/images/gunespili-sihay.png" alt="">
+                    </div>
+                    <div class="col-md-9 col-4">
+                        <div class="Menu-button">
+                            <i onclick="openMenu()" id="fa-bars" class="fas fa-bars" style="visibility: visible;"></i>
+                            <i id="fa-times" onclick="openMenu()" class="fas fa-times" style="visibility: hidden;"></i>
+                        </div>
+                        <ul id="navigation-wrapper" class="navigation-wrapper">
+                            <li>
+                                <a class="active" href="index.html">
+                                   Kurumsal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Hizmetlerimiz.html">
+                                    Hizmetler
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="navigation-sub-wrapper">
+                                    <li>
+                                        <a href="#">Güneş Enerji Santralleri GES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Off-Grid (Depolamalı) Sistem</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Solar Sulama Sistemleri</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Çatı GES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Solar Aydınlatma Sistemleri</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Montaj Ve Destek Hizmetleri</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Solar Paket Sistemleri</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="referanslar.html">
+                                    Referanslar
+                                    <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <ul class="navigation-sub-wrapper">
+                                    <li>
+                                        <a href="#">On Grid referans</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Off-Grid referance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Aydınlatma referance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tarımsal sulama referance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://shop.gunes-pili.com/">
+                                    Online Mağaza
+                                </a>
+                            </li>
+                            <li>
+                                <a href="iletişim.html">
+                                    İletişim
+                                </a>
+                            </li>
+                            <li>
+                                <div class="language-wrapper">
+                                    <select name="language">
+                                        <option value="Türkçe">Tr</option>
+                                        <option value="English">En</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-banner">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">AnaSayfa</a></li>
+                    <li class="breadcrumb-item"><a href="#">Referanslar</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">GES ADANA</li>
+                </ol>
+            </nav>
+            <div>
+                Referanslar
+            </div>
+        </div>
+    </div>
+    <div class="selected-city">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-10 col-12">
+                    <div class="tesisler-wrapper tesisler">
+                        <div id="tesis-info" class="tesis-info">
+                            <div class="tesis-info-item">
+                                <i class="far fa-address-card"></i>
+                                <div>Proje Adı</div>
+                                <span class="bold">Bossa GES</span>
+                            </div>
+                            <div class="tesis-info-item">
+                                <i class="fas fa-bolt"></i>
+                                <div>Proje Gücü</div>
+                                <div class="bold">
+                                    AC: <span>4.600kWe</span>
+                                </div>
+                                <div class="bold">DC: <span>7.034kWe</span></div>
+                            </div>
+
+                            <div class="tesis-info-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <div>Yıllık Enerji Üretimi</div>
+                                <span class="bold">8.234.543kWe</span>
+                            </div>
+                            <div class="tesis-info-item">
+                                <i class="fas fa-solar-panel"></i>
+                                <div>Kullanılan Panel Sayısı</div>
+                                <span class="bold">18.270 panel</span>
+                            </div>
+                            <div class="tesis-info-item">
+                                <i class="fas fa-radiation"></i>
+                                <div>Yıllık Engellenen Sera Gazı Salınımı</div>
+                                <span class="bold">5.064.456kg</span>
+                            </div>
+                            <div class="tesis-info-item">
+                                <i class="far fa-clock"></i>
+                                <div>Devreye Alınma Tarihi</div>
+                                <span class="bold">24.10.2020</span>
+                            </div>
+                        </div>
+                        <div id="tesis-info-slider" class="tesis-info-slider">
+                            <div class="ribbon">
+                                <span class="ribbon3">Bossa GES</span>
+                            </div>
+                            <div class="location">
+                                <div class="city">
+                                    Konya
+                                </div>
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/slider-resim-1.png" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/referances-12.jpg" alt="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/referances-13.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next">
+                                </div>
+                                <div class="swiper-button-prev">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="second-controller">
+                        <div class="swiper-button-prev2">
+                            <div>
+                                <img src="assets/images/Grup 9.png" alt="">
+                            </div>
+                            <div style="text-align: end;">
+                                <div class="bold">Kontur Konya GES</div>
+                                <div class="light-text">önceki projeye git</div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next2">
+                            <div>
+                                <div class="bold">HAS Çelik GES</div>
+                                <div class="light-text">Sonraki projeye git</div>
+                            </div>
+                            <div style="text-align: end;">
+                                <img src="assets/images/Grup 10.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="total-referance">
+                        <div class="linear-gradiand total-referance-title">
+                            Referanslar
+                        </div>
+                        <div class="total-referance-body">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        Adana Çelik GES
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="active-project" href="#">
+                                        Bürotime GES
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Adana Çelik GES
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        BüroTime GES
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Adana Çelik GES
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-12">
+                <div class="referances">
+                    <span>
+                Her yeni projede Dünya'ya bir yeni iyilik yapıyoruz.
+            </span>
+                    <div class="referances-content">
+                        <div class="referances-text">
+                            Referans GES Projelerimiz
+                        </div>
+                        <a href="#" class="classic-button">
+                            <i class="fas fa-circle"></i> Tümünü Gör
+                        </a>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-1.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-2.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-3.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-4.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-5.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-10.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-5.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-1.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-12.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-10.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-11.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12">
+                                <div class="item">
+                                    <div class="referances-item">
+                                        <div class="referances-item-img">
+                                            <img src="assets/images/referances-12.jpg" alt="">
+                                        </div>
+                                        <div class="referances-item-content">
+                                            <ul>
+                                                <li class="referances-item-content-1">08.12.2021</li>
+                                                <li class="referances-item-content-2">Adana</li>
+                                                <li class="referances-item-content-3">Adana Çelik GES</li>
+                                                <li class="referances-item-content-4">14.545 kWp</li>
+                                                <li>
+                                                    <a class="referances-item-content-5" href="#">
+                                                Devamını Oku
+                                                <i class="fas fa-chevron-circle-right"></i>
+                                            </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Owl Carousel-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Türkiye haritası js-->
+    <script src="assets/js/turkiye.js"></script>
+    <script>
+        svgturkiyeharitasi();
+    </script>
+    <!--Bootstarpt js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!--Swiper js-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--Custom js-->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
